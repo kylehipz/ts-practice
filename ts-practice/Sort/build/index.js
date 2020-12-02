@@ -1,0 +1,18 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var numbers_collection_1 = require("./numbers-collection");
+var char_collection_1 = require("./char-collection");
+var linked_list_1 = require("./linked-list");
+var numCollection = new numbers_collection_1.NumbersCollection([29, -5, 1, 77]);
+numCollection.sort();
+console.log(numCollection.data);
+var charCollection = new char_collection_1.CharacterCollection('dominador');
+charCollection.sort();
+console.log(charCollection.data);
+var linkedList = new linked_list_1.LinkedList();
+linkedList.add(77);
+linkedList.add(-5);
+linkedList.add(29);
+linkedList.add(1);
+linkedList.sort();
+linkedList.showData();
